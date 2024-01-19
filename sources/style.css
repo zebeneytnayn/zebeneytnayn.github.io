@@ -1,0 +1,415 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --_bg: #1c1d25;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+}
+.primary-header{
+    background-color: var(--_bg);
+    color: white;
+    font-size: 23px;
+    position: sticky;
+    top: 0;
+
+}
+.active {
+    background-color: #ef744b;
+    border-radius: 40px;
+    text-align: center;
+    width: 150px;
+
+}
+.primary-header__inner{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    width: 650px;
+    list-style-type: none;
+}
+.logo{
+    margin: 13px;
+    padding-left: 20px;
+}
+.intro{
+    color: white;
+    height: 100vh;
+    background-color: var(--_bg);
+    padding-top: 2px;
+    
+}
+
+h1{
+    font-size: 70px;
+    margin: 0;
+}
+h2{
+    font-size: 50px;
+    
+}
+p{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+
+}
+.about-me{
+    background-color: white;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    padding-top: 13px;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 55px;
+    align-items: center;
+}
+.about-me p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.stack{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 20px;
+    font-weight: 200;
+}
+.experience{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    font-weight: 200;
+}
+.experience span{
+    font-style: italic;
+    font-weight: 700;
+}
+h4{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.information{
+    width: 70%;
+}
+.profile{
+    display: flex;
+    align-items: center;  
+    width: 30%;
+}
+
+.profile-pic {
+    width: 65%;
+    border-radius: 150px;
+    margin-left: 30%;
+  }
+
+.contacts{
+    background-color: var(--_bg);
+    color: white;
+    /* height: 100vh; */
+    margin-top: -41px;
+    text-align: center;
+}
+.contact-container{
+    padding: 38px;
+    /* background-color: #463a3a; */
+    
+}
+.contact-container h2{
+    margin-bottom: 0;
+}
+.contact-container h4{
+    margin-top: 0;
+}
+.contact-container span{
+    color: #ef744b;
+}
+.form-container{
+    /* border: #ef744b 2px solid; */
+    margin: auto;
+    width: 60%;
+}
+.contact-form{
+   
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 40px 1px;
+}
+input[type=text]:focus{
+    outline: 1px solid #cf8369;    
+  }
+input[type=email]:focus{
+    outline: 1px solid #cf8369;     
+}
+textarea:focus{
+    outline: 2px solid #cf8369;     
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: var(--_bg);
+    font-size: 24px;
+    color: white;
+    width: inherit;
+    margin: 10px;
+    height: 40px;
+    padding: 8px;
+    border: 2px solid #ef744b;
+    border-radius: 5px;
+    
+}
+.contact-form textarea{
+    margin-bottom: 35px;
+}
+.contact-form button {
+    width: 13rem;
+    margin: auto;
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+
+  }
+  
+  .contact-form button:hover {
+    background-color: #ef744b;
+  }
+
+
+.hamburger {
+    display: none;       
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+.intro-area{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4rem;
+}
+.button {
+    width: 9rem;
+    margin-top: 20px;
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    align-items: center;
+
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.button:hover {
+    background-color: #ef744b;
+    font-size: 1.9rem;
+    width: 8.5rem;
+}
+/* .nav-list li{
+    background-color: #ef744b;
+    border-radius: 40px;
+    text-align: center;
+    width: 150px;
+} */
+.nav-list li:hover, .nav-list li.focused{
+    /* color: #ef744b; */
+    /* background-color: #ef744b; */
+    /* font-size: 30px;
+    font-weight: bold;
+    color: #ef744b; */
+    background-color: #ef744b;
+    border-radius: 40px;
+    text-align: center;
+    width: 150px;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+.project {
+    text-align: center;
+    padding: 80px;
+    background-color: white;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    padding-top: 27px;
+
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+    margin: .6rem;
+}
+
+.subtext a:hover{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+.project-card{
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+}
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    height: 65px;
+    margin-top: -41px;
+    color: white;
+    padding: 1px;
+}
+footer h4{
+    font-size: 19px;
+    font-weight: 300;
+}
+.section_title {
+    margin:0;
+}
+.section_description {
+    font-size: 	1.1875rem;
+    margin: 0 0 25px 0;
+}
+
+
+/* Define the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Apply the animation to the div element */
+.intro-area {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.information {
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .contact-form button {
+        width: 11rem;
+        font-size: 1.1rem;
+    }
+    .intro-area{
+        display: block;
+        text-align: center;
+    }
+    .intro-area h1{
+        /* margin: 10px; */
+        font-size: 3.6rem;
+    }
+    .intro-area .button{
+        margin: auto;
+    }
+    .intro-area p{
+        margin: 0px 0px 32px 0px;
+    }
+    .intro-text{
+        padding-top: 130px;
+        margin-bottom: 270px;
+    }
+    .intro-socmed{
+        display: flex;
+        justify-content: center;
+    }
+    .socmed-icon{
+        margin: 30px;
+    }
+    /* .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    } */
+    /* .logo{
+        display: none;
+    }
+    .nav-list{
+        display: none;
+        margin: 0px;
+    } */
+}
+@media only screen and (max-width: 550px) {
+    .intro-area h1{
+        /* margin: 10px; */
+        font-size: 2rem;
+    }
+    .intro-area p{
+        /* margin: 10px; */
+        font-size: 1rem;
+    }
+    .intro-area .button {
+        width: 5rem;
+        font-size: 1rem;
+    }
+     .logo{
+        display: none;
+    }
+    .nav-list {
+        justify-content: space-evenly;
+        font-size: 18px;
+    }
+    .nav-list li:hover, .nav-list li.focused{
+        width: 120px;
+    }
+}

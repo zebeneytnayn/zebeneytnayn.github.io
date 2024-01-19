@@ -1,0 +1,23 @@
+h1{
+    margin: 0;
+    text-align: center;
+  }
+  #building{
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+    overflow: auto;
+  }
+  .sections{
+    height: 225px;
+    width: 100%;
+  }
+  #section-1{
+      background-color: dodgerblue;
+  }
+  #section-2{
+      background-color: gold;
+  }
+  #section-3{
+      background-color: red;
+  }

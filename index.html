@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="sources/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f57daa2d0.js" crossorigin="anonymous"></script>
+    <script src="sources/script/script.js"></script>
+</head>
+<body>
+    <header class="primary-header">
+        <div class="wrapper">
+            <div class="primary-header__inner">
+                <span class="logo" onclick="logoClick(this)"><a href="#intro">LOGO</a></span>
+                <ul class="nav-list">
+                    <li onclick="handleClick(this)" class="nav-link"><a  href="#intro">Home</a></li>
+                    <li onclick="handleClick(this)" class="nav-link"><a  href="#about-me">About Me</a></li>
+                    <li onclick="handleClick(this)" class="nav-link"><a  href="#project">Projects</a></li>
+                    <li onclick="handleClick(this)" class="nav-link"><a  href="#contact">Contact Me</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<div id="test" class="test">
+    <section class="intro" id="intro">
+        <div class="intro-area">
+            <div class="intro-text">
+                <h1>Erven Kent Patoc</h1>
+                <p>Web Developer</p>
+                <div class="button"><a href="#about-me">About me</a></div>
+            </div>
+            <div class="intro-socmed">
+                <!-- <div><a href="https://www.twitter.com" target="_blank" class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a></div> -->
+                <div class="socmed-icon"><a href="https://github.com/zebeneytnayn/mern-chat-app-master-backend" target="_blank"  class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a></div>
+                <div class="socmed-icon"><a href="https://www.linkedin.com/in/erven-kent-patoc-2aa9b5238/" target="_blank"  class="social">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
+                </a></div>
+            </div>
+        </div>
+    </section>
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <div class="information">
+                <h2>About Me</h2>
+                <p>Hi, I'm Erven, a passionate web developer with a year of experience, I've developed expertise in both frontend and backend development. I thrive on challenges, continuously learning new technologies and staying up-to-date. I've successfully worked on various projects, from building web-based systems to managing event hosting sites. In addition to my web development skills, I've also upskilled in Amazon PPC ads, as I have a keen interest in becoming an Amazon PPC specialist. I'm dedicated to delivering high-quality work, adaptable to different project requirements, and adept at problem-solving. Let's collaborate to create innovative web solutions together.</p>
+                <hr>
+                <h4>Tech Stack</h4>
+                <div class="stack">
+                    <ul class="front">
+                        <!-- <div class="icons"><i class="fa-brands fa-html5 fa-2xl" style="color: #e64219;"><span>html</span></i></div> -->
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <ul class="back">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                <hr>
+                <h4>Experience</h4>
+                <div class="experience">
+                    <ul class="front">
+                        <li>Full Stack Developer as<span> a Freelancer</span></li>
+                        <li>WordPress Publisher at <span>DMS Publishing</span></li>
+                        <li>Web Developer at <span>MyMedsPH</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile">
+                <img class="profile-pic" src="sources/images/profile.png" alt="erven.png">
+            </div>
+        </div>
+        
+    </section>
+    <section class="project" id="project">
+        <h2 class="section_title">Work Projects</h2>
+        <p class="section_description">These are the Work related Projects where I have handled.</p>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>Balikatan</h3>
+                <p class="subtext">This is an attendance web-based system that I have developed during my OJT in <strong>Republic Cement</strong>.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>E-Cidula</h3>
+                <p class="subtext">This is my first fullstack project and my first Client as a <strong>Freelancer</strong>.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>DMS Publishing</h3>
+                <p class="subtext">These are some of the websites that I have handled during my term.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>AAP Philippines</h3>
+                <p class="subtext">This a wordpress built website that I have handled during my working days at <strong>MyMedsPH</strong>.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>Project One</h3>
+                <p class="subtext">This is my first project. I was a full stack developer.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+        </div>
+    </section> 
+    <section class="project" id="project">
+        <h2 class="section_title">Personal Projects</h2>
+        <p class="section_description">These projects are from tutorials and also my so called challenge projects: I created it as I was curios to do it.</p>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>Project One</h3>
+                <p class="subtext">This is my first project. I was a full stack developer.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>Project One</h3>
+                <p class="subtext">This is my first project. I was a full stack developer.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>Project One</h3>
+                <p class="subtext">This is my first project. I was a full stack developer.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>Project One</h3>
+                <p class="subtext">This is my first project. I was a full stack developer.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-image" src="sources/images/proj1.JPG" alt="Project One Image"/>
+                <h3>Project One</h3>
+                <p class="subtext">This is my first project. I was a full stack developer.</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" target="_blank" href="https://coderphp2019.000webhostapp.com/">View here</a></p>
+            </div>
+        </div>
+    </section>   
+    
+    <section class="contacts" id="contact">
+       
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <h4>Let's <span>talk</span></h4>
+            <div class="form-container">
+                <form action="#" method="POST" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+</div>
+</body>
+<footer>
+    <h4>Just a Footer © ervenpatoc 2023.</h4>
+</footer>
+</html>
